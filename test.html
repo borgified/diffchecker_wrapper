@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diff Checker - Online diff tool to find the difference between two text files</title>
+
+<meta name="keywords" content="online diff, diff, diff tool, quick diff, quickdiff, online diff tool, diff checker, gnu diff" />
+<meta name="description" content="Diff Checker is a free online diff tool that gives you the text differences between two blocks of text. " />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta property="fb:admins" content="506766675" />
+<meta property="og:title" content="Diff Checker" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://diffchecker.com/images/fb-image.png" />
+<meta property="og:url" content="http://www.diffchecker.com/" />
+<link rel="stylesheet" type="text/css" href="css/global2.css"/>
+<link rel="stylesheet" href="lib/codemirror.css">
+</head>
+<body>
+<div id="header">
+	<h1>
+    	<a href="/">DIFF CHECKER</a>
+	</h1>
+
+	<div class="social-buttons">
+		<div id="fb-root"></div>
+		<fb:like href="http://www.diffchecker.com" send="false" layout="button_count" width="30" show_faces="false" font="arial"></fb:like><br />
+		<span><g:plusone size="medium" count="true" href="http://www.diffchecker.com"></g:plusone></span>
+	</div>
+	<div class="navigation">
+		<a class="blue_button home" href="/"><span>Home</span></a>
+		<a class="blue_button contact" href="contact.php"><span>Contact</span></a>
+		<a class="blue_button about" href="about.php"><span>About</span></a>
+	</div>
+	<div id="description">Diff Checker is a free online diff tool that gives you the text differences between two blocks of text. Enter the contents of two files and click 'Find Difference!'</div>
+</div>
+
+
+
+<div id="results-content"><div id="link-container">The link for your diff is <a href="http://diffchecker.com/sodlaaaw" target="_blank">http://diffchecker.com/sodlaaaw</a></div><pre><table><tr><td class="line-count">1</td><td class="red_top_bottom"><span class="words_removed">pot</span> of gold </td><td class="line-count">1</td><td class="green_top_bottom"><span class="words_added">pota</span> of gold</td></tr></table></pre></div><div id="form-content">
+
+<form enctype="multipart/form-data" method="post" action="/diff" name="diffform">
+	<div class="original">
+		<textarea name="file1" id="file1" class="lined">pot of gold</textarea>
+		<span class="window_label">ORIGINAL TEXT</span>
+	</div>
+	<div class="changed">
+		<textarea name="file2" id="file2" class="lined">pota of gold</textarea>
+		<span class="window_label">CHANGED TEXT</span>
+	</div>
+    <div id="find-container">
+	<div id="dropdown-container"><select id="storage-options" name="storage-options">
+	    <option value="no">Don't store diff</option>
+	    <option value="hour">Store for 1 hour</option>
+	    <option value="day">Store for 1 day</option>
+	    <option value="month">Store for 1 month</option>
+	    <option value="forever">Store forever</option>
+	</select>
+	</div>
+
+	<input type="submit" class="blue_button find_difference" value="Find Difference!" />
+        
+    </div>
+</form>
+</div>
+
+<script type="text/javascript" src="lib/codemirror.js"></script>
+<script type="text/javascript" src="js/main2.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8857839-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="http://connect.facebook.net/en_US/all.js#appId=156576611081626&amp;xfbml=1"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>
